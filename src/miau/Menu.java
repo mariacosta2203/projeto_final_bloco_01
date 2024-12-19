@@ -2,7 +2,9 @@ package miau;
 
 import java.io.IOException;
 import java.util.Scanner;
-import miau.model.Miaulandia;
+
+import miau.model.MacacaoRoupa;
+import miau.model.Produtos;
 
 public class Menu {
 
@@ -11,10 +13,14 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 		int escolha;
 		
-		Miaulandia mr = new Miaulandia(333, 4002, "Adrielly", "adri@gen.com");
+
+		MacacaoRoupa mr = new MacacaoRoupa("Azul", "PP", 1, null);
 		mr.visualizar();
 		
-
+		MacacaoRoupa vr = new MacacaoRoupa("Amarelo", "G", 2, null);
+		vr.visualizar();
+		
+		
 		while (true) {
 
 			System.out.println("-------------------------------------------------");

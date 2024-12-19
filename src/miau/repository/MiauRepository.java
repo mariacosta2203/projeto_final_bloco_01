@@ -1,6 +1,6 @@
 package miau.repository;
 
-import miau.model.Miaulandia;
+import miau.model.Produtos;
 
 public interface MiauRepository {
 
@@ -8,9 +8,9 @@ public interface MiauRepository {
 
 	public void listarTodas();
 
-	public void cadastrar(Miaulandia conta);
+	public void cadastrar(Produtos conta);
 
-	public void atualizar(Miaulandia conta);
+	public void atualizar(Produtos conta);
 
 	public void deletar(int numero);
 	
