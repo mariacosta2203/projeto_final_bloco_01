@@ -14,7 +14,6 @@ public class Menu {
 		Roupas roupaUm = new Roupas("Azul", "GG", 1);
 		roupaUm.visualizar();
 		
-		
 		while (true) {
 
 			System.out.println("-------------------------------------------------");
