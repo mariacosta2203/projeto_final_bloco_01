@@ -6,13 +6,13 @@ public class Produtos {
 
 	private String cor;
 	private String tamanho;
-	private int modelo;
+	private int tipo;
 	
-	public Produtos(String cor, String tamanho, int modelo) {
+	public Produtos(String cor, String tamanho, int tipo) {
 
 		this.cor = cor;
 		this.tamanho = tamanho;
-		this.modelo = modelo;
+		this.tipo = tipo;
 
 	}
 
@@ -32,29 +32,29 @@ public class Produtos {
 		this.tamanho = tamanho;
 	}
 	
-	public int getModelo() {
-		return modelo;
+	public int getTipo() {
+		return tipo;
 	}
 
-	public void setModelo(int modelo) {
-		this.modelo = modelo;
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
 	}
 	
 	
 	
 	public void visualizar() {
 
-		String modelo = "";
+		String tipo = "";
 
-		switch (this.modelo) {
+		switch (this.tipo) {
 
 		case 1:
-			modelo = "Macacao";
+			tipo = "Macacao";
 
 			break;
 
 		case 2:
-			modelo= "Vestido";
+			tipo = "Vestido";
 
 			break;
 
@@ -65,7 +65,7 @@ public class Produtos {
 		System.out.println("************************************************************************");
 		System.out.println("Cor: " + this.cor);
 		System.out.println("Tamanho: " + this.tamanho);
-		System.out.println("Modelo: " + modelo);
+		System.out.println("Modelo: " + tipo);
 		
 	}
 
