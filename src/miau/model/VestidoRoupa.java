@@ -4,10 +4,10 @@ public class VestidoRoupa extends Produtos {
 
 private String vestido;
 	
-	public VestidoRoupa(String tamanho, String cor, int modelo, String macacao) {
+	public VestidoRoupa(String tamanho, String cor, int modelo, String macacao, String vestido) {
 		super(tamanho, cor, modelo);
 		
-		this.vestido = macacao;
+		this.vestido = vestido;
 	}
 	
 	public VestidoRoupa(String tamanho, int modelo, String cor) {
@@ -16,12 +16,12 @@ private String vestido;
 		this.vestido = "";
 	}
 
-	public String getMacacao() {
+	public String getVestido() {
 		return vestido;
 	}
 
-	public void setMacacao(String macacao) {
-		this.vestido = macacao;
+	public void setVestido(String vestido) {
+		this.vestido = vestido;
 	}
 		
 	public void visualizar() {
