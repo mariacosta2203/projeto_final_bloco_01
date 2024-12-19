@@ -30,7 +30,7 @@ public class Menu {
 
 			escolha = leia.nextInt();
 
-			if (escolha == 9) {
+			if (escolha == 6) {
 				System.out.println("\nMiualandia - Seu conforto está no ronron!");
 				sobre();
 				leia.close();
