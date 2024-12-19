@@ -1,6 +1,8 @@
-package menu;
+package miau;
 
+import java.io.IOException;
 import java.util.Scanner;
+import miau.model.Miaulandia;
 
 public class Menu {
 
@@ -8,6 +10,10 @@ public class Menu {
 		
 		Scanner leia = new Scanner(System.in);
 		int escolha;
+		
+		Miaulandia mr = new Miaulandia(333, 4002, "Adrielly", "adri@gen.com");
+		mr.visualizar();
+		
 
 		while (true) {
 
@@ -40,7 +46,9 @@ public class Menu {
 			switch (escolha) {
 			case 1:
 				System.out.println("Cadastre-se\n\n");
-
+				
+				
+				keyPress();
 				break;
 			case 2:
 				System.out.println("Roupas\n\n");
@@ -74,6 +82,24 @@ public class Menu {
 		System.out.println("https://github.com/mariacosta2203");
 		System.out.println("\n-------------------------------------------------");
 	}
+	
+	public static void keyPress() {
+
+		try {
+
+			System.out.println("\n\nPressione Enter para Continuar...");
+			System.in.read();
+
+		} catch (IOException e) {
+
+			System.out.println("Você pressionou uma tecla diferente de enter!");
+
+		}
+	}
+	
+	
+	
+	
 
 	}
 
