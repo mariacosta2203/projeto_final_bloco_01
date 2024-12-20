@@ -11,7 +11,7 @@ public class Menu {
 		Scanner leia = new Scanner(System.in);
 		int escolha;
 		
-		Roupas roupaUm = new Roupas("Azul", "GG", 1);
+		Roupas roupaUm = new Roupas("Azul", "GG", 2);
 		roupaUm.visualizar();
 		
 		while (true) {
